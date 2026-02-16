@@ -1,43 +1,93 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
-    background: #f4f6f8;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
 }
 
-header {
-    background: #0b3d91;
+body {
+    background: linear-gradient(135deg, #ff7a18, #32d2aa, #5f2c82);
+    background-size: 400% 400%;
+    animation: gradientMove 12s infinite alternate;
     color: white;
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1518770660439-4636190af475")
+        center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
     text-align: center;
-    padding: 40px 20px;
+    border-radius: 20px;
 }
 
-section {
-    padding: 30px 20px;
-    max-width: 900px;
-    margin: auto;
+.overlay h1 {
+    font-size: 3rem;
 }
 
-h2 {
-    color: #0b3d91;
-    border-bottom: 2px solid #0b3d91;
-    padding-bottom: 5px;
+.overlay p {
+    margin: 15px 0;
+    font-size: 1.2rem;
 }
 
-ul {
-    line-height: 1.8;
-}
-
-a {
-    color: #0b3d91;
+/* Button */
+.btn {
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Cards */
+.card {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Skills grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.grid span {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
     font-weight: bold;
 }
 
+/* Footer */
 footer {
     text-align: center;
-    background: #222;
-    color: white;
-    padding: 15px;
-    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
 }
