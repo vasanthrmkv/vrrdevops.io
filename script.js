@@ -1,42 +1,29 @@
-// ===============================
-// Smooth scrolling for anchor links
-// ===============================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+// 🌙 Dark mode toggle
+const toggle = document.getElementById("themeToggle");
+toggle.onclick = () => {
+  document.body.classList.toggle("dark");
+};
 
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
-  });
-});
+// 📦 Load GitHub repositories
+fetch("https://api.github.com/users/vasanthrmkv/repos")
+  .then(res => res.json())
+  .then(data => {
+    const repoList = document.getElementById("repoList");
+    repoList.innerHTML = "";
 
-
-// ===============================
-// Fade-in animation on scroll
-// ===============================
-const sections = document.querySelectorAll(".section, .project, .split");
-
-const observer = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
+    data.slice(0, 6).forEach(repo => {
+      repoList.innerHTML += `
+        <div class="repo">
+          <h3>${repo.name}</h3>
+          <p>${repo.description || "DevOps project repository"}</p>
+          <a href="${repo.html_url}" target="_blank">View Repo →</a>
+        </div>
+      `;
     });
-  },
-  { threshold: 0.15 }
-);
+  })
+  .catch(() => {
+    document.getElementById("repoList").innerText =
+      "Unable to load repositories.";
+  });
 
-sections.forEach(sec => observer.observe(sec));
-
-
-// ===============================
-// Console branding (professional touch)
-// ===============================
-console.log("🚀 AWS DevOps Portfolio Loaded Successfully");
-console.log("Built with Cloud, Containers, and CI/CD");
+console.log("🚀 Senior DevOps Portfolio Loaded");
