@@ -40,18 +40,6 @@ body {
     align-items: center;
     gap: 15px;   /* controls spacing between title, text, and button */
 }
-}
-
-.overlay h1 {
-    font-size: 3rem;
-}
-
-.overlay p {
-    margin: 15px 0;
-    font-size: 1.2rem;
-}
-
-
 
 
 /* Button */
