@@ -1,11 +1,42 @@
-// Smooth scroll
+// ===============================
+// Smooth scrolling for anchor links
+// ===============================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
+
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
   });
 });
 
-// Console branding
-console.log("🚀 AWS DevOps Portfolio Loaded");
+
+// ===============================
+// Fade-in animation on scroll
+// ===============================
+const sections = document.querySelectorAll(".section, .project, .split");
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+sections.forEach(sec => observer.observe(sec));
+
+
+// ===============================
+// Console branding (professional touch)
+// ===============================
+console.log("🚀 AWS DevOps Portfolio Loaded Successfully");
+console.log("Built with Cloud, Containers, and CI/CD");
