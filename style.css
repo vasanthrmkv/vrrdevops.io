@@ -1,52 +1,120 @@
-/* HERO LAYOUT WITH IMAGE */
-.hero-container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #222;
+  transition: 0.3s;
+}
+
+/* DARK MODE */
+body.dark {
+  background: #0b0f17;
+  color: #eee;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #111;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
-  max-width: 1100px;
-  width: 100%;
-  padding: 20px;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: white;
 }
 
-.hero-text {
-  text-align: left;
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
 .hero-image img {
-  width: 320px;
-  height: auto;
+  width: 300px;
   border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
-/* MOBILE RESPONSIVE */
-@media (max-width: 768px) {
-  .hero-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text {
-    text-align: center;
-  }
-
-  .hero-image img {
-    width: 220px;
-  }
-  /* Fade-in animation */
-.section,
-.project,
-.split {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #0072ff;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 15px;
 }
 
-.show {
-  opacity: 1;
-  transform: translateY(0);
+/* SECTION */
+.section {
+  padding: 70px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
 
+.section.dark {
+  background: #111;
+  color: white;
 }
 
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #0072ff;
+  color: white;
+  padding: 8px 14px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+/* TIMELINE */
+.timeline {
+  list-style: none;
+  line-height: 2;
+}
+
+/* REPO GRID */
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.repo {
+  background: #1a1f2b;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
