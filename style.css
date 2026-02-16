@@ -1,114 +1,37 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
-
-body {
-  color: #222;
-  background: #f5f7fa;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+/* HERO LAYOUT WITH IMAGE */
+.hero-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: white;
-}
-
-.hero h1 {
-  font-size: 3rem;
-}
-
-.hero p {
-  margin: 15px 0;
-  font-size: 1.2rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #00c6ff;
-  color: white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: #0072ff;
-}
-
-/* SPLIT */
-.split {
-  display: flex;
-  min-height: 300px;
-}
-
-.split-left, .split-right {
-  flex: 1;
-  padding: 40px;
-  text-align: center;
-}
-
-.split-left {
-  background: #ffffff;
-}
-
-.split-right {
-  background: #111;
-  color: white;
-}
-
-/* SECTIONS */
-.section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
-
-.section.dark {
-  background: #111;
-  color: white;
-}
-
-/* SKILLS */
-.skills {
-  margin-top: 20px;
-}
-
-.skills span {
-  display: inline-block;
-  background: #0072ff;
-  color: white;
-  padding: 10px 15px;
-  margin: 5px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-}
-
-/* PROJECTS */
-.project {
-  margin: 20px 0;
-}
-
-/* CONTACT */
-.contact a {
-  color: #0072ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* FOOTER */
-footer {
-  background: #000;
-  color: white;
-  text-align: center;
+  gap: 60px;
+  max-width: 1100px;
+  width: 100%;
   padding: 20px;
+}
+
+.hero-text {
+  text-align: left;
+}
+
+.hero-image img {
+  width: 320px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 220px;
+  }
 }
