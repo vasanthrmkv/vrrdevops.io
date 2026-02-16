@@ -1,9 +1,11 @@
-// Simple welcome message in console
-console.log("Welcome to Vasanth's DevOps Portfolio 🚀");
-
-// Smooth scroll effect for links (future use)
-document.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-        console.log("Navigating to section...");
+// Smooth scroll effect
+document.querySelectorAll("a[href^='#']").forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
     });
 });
+
+// Console greeting
+console.log("🚀 DevOps Portfolio Loaded Successfully!");
