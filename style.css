@@ -125,3 +125,33 @@ footer {
     background: #000;
     border-top: 1px solid #ff0000;
 }
+/* CONTACT SECTION */
+.contact-section {
+    background: linear-gradient(to right, #ff9999, #ffb3b3);
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.contact-card p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+.contact-card a {
+    color: #c40000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
