@@ -9,32 +9,39 @@
 </head>
 <body>
 
+<div class="animated-bg"></div>
+
 <header class="hero">
-    <div class="overlay"></div>
     <div class="hero-content">
+
+        <img src="profile.jpg" alt="Vasanth Raj Rajarajan" class="profile-pic">
+
         <h1>Vasanth Raj Rajarajan</h1>
         <h2>AWS & DevOps Engineer</h2>
-        <p>4+ Years Experience | CI/CD | Cloud Automation | Kubernetes | Infrastructure as Code</p>
+
+        <p>CI/CD • Kubernetes • Terraform • AWS • Monitoring • Automation</p>
+
         <div class="hero-buttons">
             <a href="#projects" class="btn primary">View My Work</a>
-            <a href="#contact" class="btn secondary">Contact Me</a>
+            <a href="RVR UTD DR 2026.pdf" download class="btn resume-btn">
+                Download Resume
+            </a>
         </div>
     </div>
 </header>
 
-<section id="about" class="section">
-    <h2>About Me</h2>
+<section class="section dark">
+    <h2 class="section-title">About Me</h2>
     <p>
-        AWS DevOps Engineer with 4 years of hands-on experience in designing,
-        automating, and optimizing CI/CD pipelines and cloud infrastructure.
-        Strong expertise in AWS, Docker, Kubernetes, Terraform, Jenkins,
-        Prometheus, and Grafana. Experienced in highly regulated environments
-        ensuring compliance, auditability, and secure deployments.
+        DevOps Engineer with 4+ years of experience in AWS cloud infrastructure,
+        CI/CD automation, container orchestration, and production monitoring.
+        Experienced in regulated environments with strong focus on security,
+        reliability, and scalability.
     </p>
 </section>
 
-<section id="skills" class="section dark">
-    <h2>Technical Skills</h2>
+<section class="section">
+    <h2 class="section-title">Core Skills</h2>
     <div class="skills-grid">
         <div class="card">AWS (EC2, S3, IAM, EKS, VPC)</div>
         <div class="card">Docker & Kubernetes</div>
@@ -45,29 +52,40 @@
     </div>
 </section>
 
+<section class="section dark" id="architecture">
+    <h2 class="section-title">AWS Architecture</h2>
+
+    <div class="architecture-container">
+        <img src="https://miro.medium.com/v2/resize:fit:1200/1*4kV0yEsl8kFqA_Jk2iC0Kw.png"
+             alt="AWS DevOps Architecture Diagram">
+    </div>
+
+    <p>
+        Production-grade architecture using AWS VPC, ALB, EC2/EKS,
+        RDS, S3, IAM roles, and CloudWatch monitoring.
+    </p>
+</section>
+
 <section id="projects" class="section">
-    <h2>Projects</h2>
+    <h2 class="section-title">Projects</h2>
+
     <div class="projects-grid">
 
         <div class="project-card">
             <h3>Enterprise CI/CD Pipeline</h3>
-            <p>Implemented automated CI/CD pipelines using Jenkins, Docker, and GitHub, reducing deployment time by 40%.</p>
-            <button class="btn primary">View Project</button>
+            <p>Automated build, test, and deployment pipelines reducing release time by 40%.</p>
         </div>
 
         <div class="project-card">
-            <h3>AWS Infrastructure Automation</h3>
-            <p>Provisioned secure AWS infrastructure using Terraform and Ansible with environment segregation and IAM policies.</p>
-            <button class="btn primary">View Project</button>
+            <h3>Kubernetes on AWS EKS</h3>
+            <p>Deployed scalable microservices with monitoring & auto-scaling.</p>
         </div>
 
         <div class="project-card">
-            <h3>Kubernetes Deployment on EKS</h3>
-            <p>Deployed containerized microservices on AWS EKS with monitoring using Prometheus and Grafana.</p>
-            <button class="btn primary">View Project</button>
+            <h3>Infrastructure as Code</h3>
+            <p>Provisioned AWS infrastructure using Terraform with environment isolation.</p>
         </div>
-
-    </div>
+        </div>
 </section>
 
 <section id="contact" class="section dark">
@@ -77,8 +95,11 @@
     <p>LinkedIn: linkedin.com/in/vasanth-raj-rajarajan-b87b7131b</p>
 </section>
 
+    </div>
+</section>
+
 <footer>
-    <p>© 2026 Vasanth Raj Rajarajan | AWS DevOps Engineer</p>
+    © 2026 Vasanth Raj Rajarajan | AWS DevOps Engineer
 </footer>
 
 </body>
