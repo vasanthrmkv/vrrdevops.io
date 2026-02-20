@@ -1,128 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Vasanth Raj Rajarajan | AWS DevOps Engineer</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vasanth Raj Rajarajan | AWS DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
-<header class="hero">
-    <div class="hero-content">
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay">
+    
+    <img src="profile.jpg" alt="Vasanth Raj Rajarajan" class="profile-pic">
 
-        <!-- Square Profile Photo -->
-        <img src="profile.jpg" alt="Vasanth Raj Rajarajan" class="profile-pic">
+    <h1>Building Scalable Cloud Systems</h1>
+    <p>AWS & DevOps Engineer • Automation • Kubernetes • CI/CD</p>
+    <p>From code to cloud — deploy faster and scale smarter</p>
 
-        <h1>Vasanth Raj Rajarajan</h1>
-        <h2>AWS & DevOps Engineer</h2>
-
-        <p>CI/CD • Kubernetes • Terraform • AWS • Monitoring • Automation</p>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="btn primary">View My Work</a>
-            <a href="resume.pdf" download class="btn secondary">Download Resume</a>
-        </div>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="resume.pdf" download class="btn secondary">Download Resume</a>
     </div>
-</header>
 
-<section class="section">
-    <h2>About Me</h2>
+  </div>
+</section>
+
+<!-- SPLIT ROLE -->
+<section class="split card">
+  <div class="split-left">
+    <h2>Cloud Reliability</h2>
     <p>
-        DevOps Engineer with 4+ years of experience in AWS cloud infrastructure,
-        CI/CD automation, container orchestration, and production monitoring.
-        Strong focus on scalable architecture, automation, and reliability.
+      Designing secure, scalable AWS infrastructure using Terraform,
+      networking best practices, and production-grade automation.
     </p>
-</section>
+  </div>
 
-<section class="section skills-section">
-    <h2>Core Skills</h2>
-
-    <div class="skills-grid">
-        <div class="card">AWS (EC2, S3, IAM, EKS, VPC)</div>
-        <div class="card">Docker & Kubernetes</div>
-        <div class="card">Jenkins CI/CD</div>
-        <div class="card">Terraform & Ansible</div>
-        <div class="card">Prometheus & Grafana</div>
-        <div class="card">Git & GitHub</div>
-    </div>
-</section>
-
-<section class="section" id="architecture">
-    <h2>AWS Architecture</h2>
-
-    <!-- IMPORTANT: Save this image locally -->
-    <img src="aws-architecture.png" class="architecture-img" alt="AWS Architecture">
-
+  <div class="split-right">
+    <h2>DevOps Engineer</h2>
     <p>
-        Production architecture using VPC, ALB, EKS, RDS, S3, IAM Roles,
-        Auto Scaling, and CloudWatch monitoring.
+      Building CI/CD pipelines, Kubernetes platforms, monitoring systems,
+      and reliable deployment automation for real production workloads.
     </p>
+  </div>
 </section>
 
-<section class="section projects-section" id="projects">
-    <h2>My Work</h2>
-
-    <div class="projects-grid">
-
-        <div class="project-card">
-            <h3>Enterprise CI/CD Pipeline</h3>
-            <p>
-                Built Jenkins-based CI/CD pipeline integrating Docker builds,
-                automated testing, and deployment to AWS.
-            </p>
-        </div>
-
-        <div class="project-card">
-            <h3>Kubernetes on AWS EKS</h3>
-            <p>
-                Deployed microservices to EKS with monitoring using Prometheus
-                and Grafana. Implemented auto-scaling and health checks.
-            </p>
-        </div>
-
-        <div class="project-card">
-            <h3>Infrastructure as Code</h3>
-            <p>
-                Provisioned AWS infrastructure using Terraform with modular
-                design and environment segregation.
-            </p>
-        </div>
-
-    </div>
+<!-- ABOUT -->
+<section class="section card">
+  <h2>About Me</h2>
+  <p>
+    AWS & DevOps Engineer with 5+ years of experience in cloud infrastructure,
+    CI/CD automation, container orchestration, and monitoring.
+    Specialized in scalable, secure, and cost-optimized production systems.
+  </p>
 </section>
-    <section id="contact" class="section contact-section">
-    <h2>Contact</h2>
 
-    <div class="contact-card">
-        <p>
-            📧 Email:
-            <a href="mailto:vasanthrmkv@gmail.com">
-                vasanthrmkv@gmail.com
-            </a>
-        </p>
+<!-- SKILLS -->
+<section class="section card">
+  <h2>Core Technologies</h2>
+  <div class="grid">
+    <span>AWS</span>
+    <span>Docker</span>
+    <span>Kubernetes</span>
+    <span>Terraform</span>
+    <span>Jenkins</span>
+    <span>GitHub Actions</span>
+    <span>Prometheus</span>
+    <span>Grafana</span>
+    <span>Linux</span>
+  </div>
+</section>
 
-        <p>
-            📱 Mobile:
-            <a href="tel:+918015728221">
-                +91 8015728221
-            </a>
-        </p>
+<!-- AWS ARCHITECTURE -->
+<section class="section card">
+  <h2>Production Architecture</h2>
 
-        <p>
-            🔗 LinkedIn:
-            <a href="https://linkedin.com/in/vasanth-raj-rajarajan-b87b7131b"
-               target="_blank">
-               linkedin.com/in/vasanth-raj-rajarajan-b87b7131b
-            </a>
-        </p>
-    </div>
-    </section>
+  <img src="aws-architecture.png" alt="AWS Architecture Diagram" class="architecture-img">
+
+  <p>
+    Production architecture using VPC, ALB, EKS, RDS, S3, IAM Roles,
+    Auto Scaling, and CloudWatch monitoring.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section card">
+  <h2>Featured DevOps Work</h2>
+
+  <div class="project">
+    <h3>CI/CD Automation Platform</h3>
+    <p>End-to-end Jenkins & GitHub Actions pipelines for containerized deployments.</p>
+  </div>
+
+  <div class="project">
+    <h3>AWS Infrastructure with Terraform</h3>
+    <p>Provisioned VPC, EC2, ALB, Auto Scaling, and EKS production environments.</p>
+  </div>
+
+  <div class="project">
+    <h3>Kubernetes Zero-Downtime Deployments</h3>
+    <p>Rolling & blue-green strategies ensuring safe production releases.</p>
+  </div>
+
+  <div class="project">
+    <h3>Monitoring & Reliability Engineering</h3>
+    <p>Prometheus + Grafana observability improving uptime and alerting.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact card">
+  <h2>Let’s Build Reliable Cloud Systems</h2>
+
+  <p>
+    📧 <a href="mailto:vasanthrmkv@gmail.com">vasanthrmkv@gmail.com</a>
+  </p>
+
+  <p>
+    📱 <a href="tel:+918015728221">+91 8015728221</a>
+  </p>
+
+  <p>
+    🔗 <a href="https://www.linkedin.com/in/vasanth-raj-rajarajan-b87b7131b" target="_blank">
+      Connect on LinkedIn
+    </a>
+  </p>
+</section>
 
 <footer>
-    © 2026 Vasanth Raj Rajarajan | AWS DevOps Engineer
+  <p>© 2026 Vasanth Raj Rajarajan — AWS DevOps Engineer</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
