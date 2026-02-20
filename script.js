@@ -1,20 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-
-    const buttons = document.querySelectorAll(".btn");
-
-    buttons.forEach(button => {
-        button.addEventListener("click", function () {
-            console.log("Button clicked:", button.textContent);
-        });
-    });
-
-    // Smooth Scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute("href"))
-                .scrollIntoView({ behavior: "smooth" });
-        });
-    });
-
+document.addEventListener("mousemove", function(e) {
+    const bg = document.querySelector(".animated-bg");
+    const x = e.clientX / window.innerWidth * 20;
+    const y = e.clientY / window.innerHeight * 20;
+    bg.style.transform = `translate(${x}px, ${y}px)`;
 });
