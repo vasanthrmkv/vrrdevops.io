@@ -120,10 +120,13 @@ body {
 
 /* AWS architecture full width */
 .architecture-img {
-    width: 100%;
-    max-width: 100%;
+    width: 70%;              /* reduces overall size */
+    max-width: 800px;        /* prevents it becoming too large on big screens */
+    height: auto;            /* keeps aspect ratio */
+    display: block;
+    margin: 30px auto;       /* centers the image */
     border-radius: 15px;
-    margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
 
 /* Contact */
