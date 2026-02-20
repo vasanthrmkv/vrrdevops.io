@@ -120,7 +120,7 @@ body {
 
 /* AWS architecture full width */
 .architecture-img {
-    width: 70%;              /* reduces overall size */
+    width: 40%;              /* reduces overall size */
     max-width: 800px;        /* prevents it becoming too large on big screens */
     height: auto;            /* keeps aspect ratio */
     display: block;
