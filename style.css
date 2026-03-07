@@ -43,12 +43,11 @@ font-size:1.2rem;
 }
 
 .project-card p{
-    margin-top:10px;
-    margin-bottom:20px;
+margin-bottom:20px;
 }
 
 .project-card .btn{
-    align-self:flex-start;
+margin-top:auto;
 }
 
 .tagline2{
