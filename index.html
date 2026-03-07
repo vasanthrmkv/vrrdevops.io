@@ -9,21 +9,26 @@
 
 <body>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="overlay">
+<div class="overlay">
 
-    <h1>VRR DevOps | AWS Cloud & DevOps Engineer</h1>
+<h1>AWS Cloud & DevOps Engineer</h1>
 
-    <p>AWS • Terraform • Kubernetes • CI/CD • Docker • Monitoring</p>
+<p class="hero-tech">
+AWS • Terraform • Kubernetes • Docker • Jenkins • CI/CD • Monitoring
+</p>
 
-    <p>Building scalable cloud infrastructure and automated deployment pipelines</p>
+<p class="hero-desc">
+Building scalable cloud infrastructure and automated deployment pipelines.
+</p>
 
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View My Work</a>
-      <a href="VRR 2026.pdf" download class="btn secondary">Download Resume</a>
-    </div>
+<div class="hero-buttons">
+<a href="#projects" class="btn">View My Work</a>
+<a href="VRR 2026.pdf" download class="btn secondary">Download Resume</a>
+</div>
 
-  </div>
+</div>
 </section>
 
 
@@ -33,21 +38,22 @@
 <h2>About Me</h2>
 
 <p>
-Results-driven AWS & DevOps Engineer with 5+ years of IT experience,
-including 4+ years designing scalable cloud infrastructure and CI/CD automation.
-Experienced in deploying containerized applications on Kubernetes (EKS),
-provisioning infrastructure with Terraform, and implementing monitoring
-with Prometheus and Grafana to improve system reliability.
+Results-driven AWS & DevOps Engineer with 5+ years of IT experience including
+4+ years designing scalable cloud infrastructure and automated CI/CD pipelines.
+
+Specialized in Kubernetes deployments on Amazon EKS, Terraform infrastructure
+automation, and monitoring using Prometheus and Grafana.
+
+Focused on building secure, reliable and scalable production environments.
 </p>
 
 </section>
 
 
-
 <!-- SKILLS -->
 <section class="section card">
 
-<h2>Core DevOps Stack</h2>
+<h2>Core Technologies</h2>
 
 <div class="grid">
 
@@ -61,12 +67,10 @@ with Prometheus and Grafana to improve system reliability.
 <span>Grafana</span>
 <span>Linux</span>
 <span>Helm</span>
-<span>Ansible</span>
 
 </div>
 
 </section>
-
 
 
 <!-- FEATURED PROJECTS -->
@@ -81,10 +85,11 @@ with Prometheus and Grafana to improve system reliability.
 
 <p>
 Automated container build and deployment pipelines using Jenkins,
-GitHub Actions and Docker.
+Docker, and AWS services.
 </p>
 
 <a href="#project1" class="btn small">View Architecture</a>
+
 </div>
 
 
@@ -93,8 +98,8 @@ GitHub Actions and Docker.
 <h3>AWS Infrastructure Automation</h3>
 
 <p>
-Provisioned production AWS environments using Terraform modules
-and scalable networking architecture.
+Provisioned production-grade AWS infrastructure using Terraform
+with scalable networking and compute architecture.
 </p>
 
 <a href="#project2" class="btn small">View Architecture</a>
@@ -107,8 +112,8 @@ and scalable networking architecture.
 <h3>Kubernetes Production Platform</h3>
 
 <p>
-Deployed microservices to Amazon EKS using Helm,
-blue-green deployments and automated scaling.
+Designed scalable Kubernetes platform on Amazon EKS
+with automated deployments and container orchestration.
 </p>
 
 <a href="#project3" class="btn small">View Architecture</a>
@@ -120,93 +125,88 @@ blue-green deployments and automated scaling.
 </section>
 
 
+<!-- PROJECT 1 -->
+<section id="project1" class="section card">
 
 <h2>Project 1 — CI/CD Automation Platform</h2>
 
-<img src="./cicd-architecture.png" class="architecture-img">
+<img src="cicd-architecture.png" class="architecture-img">
 
 <p>
-Designed and implemented a fully automated CI/CD platform for containerized
-microservices using Jenkins and GitHub Actions.
+Designed and implemented automated CI/CD pipelines for containerized
+applications using Jenkins and AWS DevOps services.
 
-The pipeline automatically triggers on code commits, builds Docker images,
-runs tests, pushes artifacts to container registry, and deploys applications
-to Kubernetes clusters.
+The pipeline automatically builds Docker images, runs automated tests,
+pushes images to Amazon ECR and deploys applications to production environments.
 </p>
 
-<h4>Architecture Flow</h4>
-
 <ul>
-<li>Developer pushes code to GitHub repository</li>
-<li>Jenkins pipeline triggers automated build</li>
-<li>Docker images are created and pushed to container registry</li>
-<li>Kubernetes cluster deploys updated containers</li>
-<li>Monitoring integrated using Prometheus and Grafana</li>
+
+<li>Automated build, test and deployment pipelines</li>
+<li>Reduced deployment time from hours to minutes</li>
+<li>Improved release reliability and consistency</li>
+
 </ul>
 
-<h4>Impact</h4>
-
-<ul>
-<li>Deployment frequency increased by 60%</li>
-<li>Manual release effort reduced by 70%</li>
-<li>Consistent and reliable production deployments</li>
-</ul>
+</section>
 
 
-<h2>Project 2 — AWS Infrastructure Automation with Terraform</h2>
 
-<img src="./aws-architecture.png" class="architecture-img">
+<!-- PROJECT 2 -->
+<section id="project2" class="section card">
+
+<h2>Project 2 — AWS Infrastructure with Terraform</h2>
+
+<img src="aws-architecture.png" class="architecture-img">
 
 <p>
-Built scalable and secure AWS infrastructure using Terraform modules.
-The architecture provisions networking, compute resources, and container
-platforms in an automated and repeatable manner.
+Implemented Infrastructure as Code using Terraform to provision
+scalable AWS environments.
+
+The architecture includes VPC networking, load balancing,
+auto-scaling compute infrastructure and highly available databases.
 </p>
 
-<h4>Architecture Components</h4>
-
 <ul>
+
 <li>Custom VPC with public and private subnets</li>
-<li>Application Load Balancer for traffic distribution</li>
+<li>Application Load Balancer distributing traffic</li>
 <li>Auto Scaling EC2 instances for application workloads</li>
-<li>Amazon EKS cluster for container orchestration</li>
-<li>IAM roles and security groups for least-privilege access</li>
+<li>Highly available RDS Multi-AZ database</li>
+
 </ul>
 
-<h4>Benefits</h4>
+</section>
 
-<ul>
-<li>Infrastructure provisioning automated through Terraform</li>
-<li>Environment setup time reduced from days to under 1 hour</li>
-<li>Improved consistency across Dev, QA, and Production environments</li>
-</ul>
 
-<h2>Project 3 — Kubernetes Production Deployment Platform</h2>
 
-<img src="./k8s-architecture.png" class="architecture-img">
+<!-- PROJECT 3 -->
+<section id="project3" class="section card">
+
+<h2>Project 3 — Kubernetes Deployment Platform</h2>
+
+<img src="k8s-architecture.png" class="architecture-img">
 
 <p>
-Designed a scalable Kubernetes platform using Amazon EKS to deploy
-containerized microservices with high availability and automated scaling.
+Built container orchestration platform using Amazon EKS
+to deploy scalable microservices.
+
+Applications are packaged as Docker containers and deployed
+using Kubernetes deployment strategies.
 </p>
 
-<h4>Architecture Flow</h4>
-
 <ul>
-<li>Applications packaged as Docker containers</li>
-<li>Images stored in container registry</li>
-<li>Kubernetes deployments managed through Helm charts</li>
-<li>Rolling and blue-green deployment strategies implemented</li>
-<li>Horizontal Pod Autoscaler scales workloads dynamically</li>
+
+<li>Container images stored in Amazon ECR</li>
+<li>Kubernetes pods managed through Helm deployments</li>
+<li>Ingress controller managing external traffic</li>
+<li>Horizontal Pod Autoscaler enabling dynamic scaling</li>
+
 </ul>
 
-<h4>Reliability Features</h4>
+</section>
 
-<ul>
-<li>Zero-downtime application deployments</li>
-<li>Improved resource utilization through auto scaling</li>
-<li>Centralized monitoring using Prometheus and Grafana</li>
-</ul>
+
 
 <!-- CONTACT -->
 <section class="section contact card">
@@ -223,7 +223,7 @@ containerized microservices with high availability and automated scaling.
 
 <p>
 🔗 <a href="https://www.linkedin.com/in/vasanth-raj-rajarajan-b87b7131b" target="_blank">
-LinkedIn Profile
+Connect on LinkedIn
 </a>
 </p>
 
