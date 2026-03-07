@@ -54,3 +54,11 @@ font-size:1.2rem;
 .tagline2{
 opacity:0.9;
 }
+.architecture-img{
+width:70%;
+max-width:900px;
+display:block;
+margin:30px auto;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
