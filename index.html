@@ -129,72 +129,92 @@ blue-green deployments and automated scaling.
 
 
 
-<!-- PROJECT 1 -->
-<section id="project1" class="section card">
-
 <h2>Project 1 — CI/CD Automation Platform</h2>
 
-<img src="cicd-architecture.png" class="architecture-img">
+<img src="./cicd-architecture.png" class="architecture-img">
 
 <p>
-Built end-to-end CI/CD pipelines using Jenkins and GitHub Actions.
-The pipeline automatically builds Docker images, runs tests,
-pushes artifacts to container registry and deploys to Kubernetes.
+Designed and implemented a fully automated CI/CD platform for containerized
+microservices using Jenkins and GitHub Actions.
+
+The pipeline automatically triggers on code commits, builds Docker images,
+runs tests, pushes artifacts to container registry, and deploys applications
+to Kubernetes clusters.
 </p>
 
+<h4>Architecture Flow</h4>
+
 <ul>
-<li>Reduced deployment time from hours to minutes</li>
-<li>Automated build and release workflows</li>
-<li>Integrated SonarQube quality gates</li>
+<li>Developer pushes code to GitHub repository</li>
+<li>Jenkins pipeline triggers automated build</li>
+<li>Docker images are created and pushed to container registry</li>
+<li>Kubernetes cluster deploys updated containers</li>
+<li>Monitoring integrated using Prometheus and Grafana</li>
 </ul>
 
-</section>
+<h4>Impact</h4>
+
+<ul>
+<li>Deployment frequency increased by 60%</li>
+<li>Manual release effort reduced by 70%</li>
+<li>Consistent and reliable production deployments</li>
+</ul>
 
 
+<h2>Project 2 — AWS Infrastructure Automation with Terraform</h2>
 
-<!-- PROJECT 2 -->
-<section id="project2" class="section card">
-
-<h2>Project 2 — AWS Infrastructure with Terraform</h2>
-
-<img src="aws-architecture.png" class="architecture-img">
+<img src="./aws-architecture.png" class="architecture-img">
 
 <p>
-Provisioned scalable AWS infrastructure using Terraform modules
-including VPC, ALB, EC2, Auto Scaling and EKS clusters.
+Built scalable and secure AWS infrastructure using Terraform modules.
+The architecture provisions networking, compute resources, and container
+platforms in an automated and repeatable manner.
 </p>
 
+<h4>Architecture Components</h4>
+
 <ul>
-<li>Automated infrastructure provisioning</li>
-<li>Implemented remote backend with state locking</li>
-<li>Reduced environment setup time from days to under 1 hour</li>
+<li>Custom VPC with public and private subnets</li>
+<li>Application Load Balancer for traffic distribution</li>
+<li>Auto Scaling EC2 instances for application workloads</li>
+<li>Amazon EKS cluster for container orchestration</li>
+<li>IAM roles and security groups for least-privilege access</li>
 </ul>
 
-</section>
+<h4>Benefits</h4>
 
+<ul>
+<li>Infrastructure provisioning automated through Terraform</li>
+<li>Environment setup time reduced from days to under 1 hour</li>
+<li>Improved consistency across Dev, QA, and Production environments</li>
+</ul>
 
+<h2>Project 3 — Kubernetes Production Deployment Platform</h2>
 
-<!-- PROJECT 3 -->
-<section id="project3" class="section card">
-
-<h2>Project 3 — Kubernetes Production Deployment</h2>
-
-<img src="k8s-architecture.png" class="architecture-img">
+<img src="./k8s-architecture.png" class="architecture-img">
 
 <p>
-Designed Kubernetes deployment strategies using Amazon EKS
-with rolling updates and blue-green deployments.
+Designed a scalable Kubernetes platform using Amazon EKS to deploy
+containerized microservices with high availability and automated scaling.
 </p>
 
+<h4>Architecture Flow</h4>
+
 <ul>
-<li>Zero-downtime deployments</li>
-<li>Helm-based application management</li>
-<li>Auto scaling with HPA</li>
+<li>Applications packaged as Docker containers</li>
+<li>Images stored in container registry</li>
+<li>Kubernetes deployments managed through Helm charts</li>
+<li>Rolling and blue-green deployment strategies implemented</li>
+<li>Horizontal Pod Autoscaler scales workloads dynamically</li>
 </ul>
 
-</section>
+<h4>Reliability Features</h4>
 
-
+<ul>
+<li>Zero-downtime application deployments</li>
+<li>Improved resource utilization through auto scaling</li>
+<li>Centralized monitoring using Prometheus and Grafana</li>
+</ul>
 
 <!-- CONTACT -->
 <section class="section contact card">
