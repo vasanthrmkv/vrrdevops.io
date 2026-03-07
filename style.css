@@ -191,3 +191,14 @@ footer {
 .contact-card a:hover {
     text-decoration: underline;
 }
+.project-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn.small {
+    padding: 8px 18px;
+    font-size: 0.9rem;
+}
