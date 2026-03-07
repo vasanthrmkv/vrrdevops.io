@@ -31,6 +31,25 @@ display:inline-block;
 .tagline{
 font-size:1.2rem;
 }
+.project-card{
+    background: linear-gradient(135deg,#ff512f,#dd2476);
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.project-card p{
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+.project-card .btn{
+    align-self:flex-start;
+}
 
 .tagline2{
 opacity:0.9;
